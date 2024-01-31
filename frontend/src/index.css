@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===============================
+
+Photo by <a href="https://unsplash.com/@benjeeeman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben den Engelsen</a> on <a href="https://unsplash.com/photos/a-snow-covered-mountain-with-trees-in-the-foreground-VIXMeng4e4c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-white: white;
+  --bg-color-gray: rgb(234, 234, 234);
+  --nav-bg-color: rgba(57, 57, 57, 0.458);
+  --nav-dark-bg: rgba(0, 0, 0, 0.368);
+  --link-hover-color: rgba(252, 252, 252, 0.613);
+  --nav-link-color: rgb(255, 255, 255);
+  --courses-card-hover-color: rgba(0, 0, 0, 0.239);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.top-page {
+  background: linear-gradient(to top, #000000ba, #fefefe0e), url(imgs/ben-den-engelsen-VIXMeng4e4c-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ===============================
+styles for Nav.js
+================================== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 1.25em;
+  transition: all 0.3s;
+}
+
+.nav-dark-bg {
+  background-color: var(--nav-dark-bg);
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 0.25em;
+  color: var(--nav-link-color);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:visited,
+.name-link:visited {
+  color: var(--nav-link-color);
+}
+
+.menu-container {
+  display: none;
+}
+
+.sidebar-container {
+  display: none;
+}
+
+/* ===============================
+styles for Hero.js
+================================== */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15em 1em;
+  gap: 2em;
+  text-align: center;
+}
+
+.hero-welcome-text {
+  font-size: 3rem;
+  line-height: 1.3;
+  max-width: 700px;
+  color: white;
+  padding-bottom: 12px;
+  
+}
+
+.hero-welcome-subtext {
+  max-width: 700px;
+  color: white;
+}
+
+.colin-billingsley {
+  color: white;
+  border-bottom: 2px solid white;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+/* ===============================
+styles for About.js
+================================== */
+.about-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  padding: 10em 2em;
+  color: black;
+}
+
+.about-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 5px 12px 12px rgba(0, 0, 0, 0.433);
+}
+
+.about-header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about-text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.about-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* ===============================
+styles for Education.js
+================================== */
+.education-container {
+  background-color: var(--bg-color-gray);
+  padding: 5em 2em;
+}
+
+.education-header {
+  text-align: center;
+  font-size: 2em;
+  line-height: 4;
+}
+
+.education-subtext {
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.education-lists-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.education-school {
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1.25em;
+}
+
+.education-courses {
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 3;
+}
+
+.lssc-list,
+.ucf-list,
+.relevant-courses-list {
+  text-align: center;
+  background-color: white;
+  padding: 1em;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  color: black;
+}
+
+.lssc-list:hover,
+.ucf-list:hover,
+.relevant-courses-list:hover {
+  transform: translateY(-8px);
+  cursor: default;
+}
+
+.lssc-list {
+  flex-basis: 400px;
+  flex-grow: 1;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: all 0.3s ease;
+}
+
+.lssc-list:hover {
+  outline: 2px solid green;
+  outline-offset: 5px;
+}
+
+.ucf-list {
+  flex-basis: 400px;
+  flex-grow: 1;
+  color: black;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: all 0.3s ease;
+}
+
+.lssc-list .education-school {
+  color: green;
+}
+
+.ucf-list .education-school {
+  color: gold;
+}
+
+.ucf-list:hover {
+  outline: 2px solid gold;
+  outline-offset: 5px;
+}
+
+.lssc-sublist li,
+.ucf-sublist li {
+  line-height: 1.5;
+}
+
+.relevant-courses-list {
+  flex-basis: 800px;
+  flex-grow: 3;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: all 0.3s ease;
+}
+
+.relevant-courses-list:hover {
+  outline: 2px solid white;
+  outline-offset: 5px;
+}
+
+.relevant-courses-sublist {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: 50px;
+  row-gap: 15px;
+  color: black;
+}
+
+.relevant-courses-sublist li {
+  padding: 1em;
+  background-color: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.relevant-courses-sublist li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 8px var(--courses-card-hover-color);
+}
+
+.relevant-courses-sublist li p {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85em;
+  color: gray;
+}
+
+/* ===============================
+styles for Skills.js
+================================== */
+.skills-container {
+  background-color: var(--bg-color-white);
+  padding: 5em 3em 5em 3em;
+}
+
+.skills-container h2 {
+  font-size: 2em;
+  padding-bottom: 1.5em;
+}
+
+.skills-list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+  padding: 3em 1em;
+}
+
+.skills-list li {
+  text-align: center;
+}
+
+.github {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+/* ===============================
+styles for Projects.js
+================================== */
+.projects-container {
+  background-color: var(--bg-color-gray);
+  padding: 5em 2em;
+}
+
+.projects-container h2 {
+  font-size: 2em;
+  padding-bottom: 1.5em;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  text-align: left;
+  gap: 1rem;
+  padding: 2em 1em;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.15em;
+  padding-bottom: 1rem;
+}
+
+.project-description {
+  padding-bottom: 1rem;
+  max-width: 90%;
+}
+
+.project-description a {
+  text-decoration: underline;
+  color: black;
+}
+
+.project-tools {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project-tools li {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  cursor: default;
+  background-color: rgba(135, 135, 135, 0.134);
+}
+
+.project-card:hover .project-img {
+  border: 2px solid white;
+}
+
+.github-link i {
+  display: inline-block;
+  border-radius: 50%;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover i {
+  outline: 1px solid black;
+  transform: scale(1.2);
+}
+
+/* ===============================
+styles for Contact.js
+================================== */
+.contact-container {
+  background-color: var(--bg-color-white);
+  padding: 5em 3em;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1.5em;
+}
+
+.info-resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.my-info-container,
+.resume-container {
+  padding: 2em;
+}
+
+.my-info-container h3 {
+  padding-bottom: 1em;
+}
+
+.my-info-container a {
+  color: black;
+}
+
+.my-info-container a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.557);
+}
+
+.contact-item {
+  display: flex;
+  gap: 1em;
+}
+
+.my-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resume-container {
+  text-align: center;
+}
+
+.resume-container h3 {
+  padding-bottom: 1rem;
+}
+
+.resume-container a {
+  color: black;
+}
+
+.resume-button {
+  display: block;
+  padding: 1rem 2.5rem;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  max-width: fit-content;
+}
+
+.resume-button:hover {
+  transform: scale(1.05);
+  border: 1px solid transparent;
+  background-color: rgb(128, 192, 213);
+  color: white;
+}
+
+/* ===============================
+styles for Footer.js
+================================== */
+.footer-container {
+  background-color: var(--bg-color-white);
+  padding: 5em;
+  text-align: center;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Screen sizes 900px and less
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 900px) {
+  /* ===============================
+  styles for Hero.js
+  ================================== */
+  .hero-welcome-text {
+    padding-bottom: 0.5em;
+  }
+
+  /* ===============================
+  styles for About.js
+  ================================== */
+  .about-container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .about-img {
+    max-width: 300px;
+  }
+
+  /* ===============================
+  styles for Projects.js
+  ================================== */
+  .project-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-description {
+    margin: 0 auto;
+  }
+
+  .project-tools {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Screen sizes 700px and less
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 700px) {
+
+  /* ===============================
+    styles for Nav.js
+  ================================== */
+  .nav-links-container {
+    display: none;
+  }
+
+  .nav-container {
+    position: fixed;
+    width: 100%;
+  }
+
+  .menu-container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+
+  .menu-container.active .line1 {
+    transform: translate(0, 5px) rotate(135deg);
+  }
+
+  .menu-container.active .line2 {
+    opacity: 0;
+  }
+
+  .menu-container.active .line3 {
+    transform: translate(0, -5px) rotate(225deg);
+  }
+
+  .sidebar-container {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.142);
+    backdrop-filter: blur(10px);
+    display: flex;;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+  }
+
+  .sidebar:first-child {
+    margin-left: auto;
+  }
+
+  .sidebar-item {
+    width: 100%;
+  }
+
+  .sidebar-link {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: block;
+    color: black;
+  }
+
+  .sidebar-link:hover {
+    color: rgba(0, 0, 0, 0.598);
+    background-color: rgba(255, 255, 255, 0.537);
+  }
+
+  .sidebar.closed {
+    visibility: hidden;
+    transform: translateX(-250px);
+    transition: 0.5s ease;
+  }
+
+  .sidebar.open {
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.5s ease;
+  }
+
+  /* ===============================
+    styles for Hero.js
+  ================================== */
+  .hero-welcome-text {
+    font-size: 1.90em;
+  }
+
+  /* ===============================
+    styles for About.js
+  ================================== */
+  .about-img {
+    max-width: 200px;
+  }
+
+  /* ===============================
+    styles for Education.js
+  ================================== */
+  .relevant-courses-sublist {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 15px;
+  }
+
+  /* ===============================
+    styles for Skills.js
+  ================================== */
+
+  .skills-container h2 {
+    text-align: center;
+  }
+
+  .skills-list img {
+    max-width: 60%;
+  }
+
+  /* ===============================
+    styles for Projects.js
+  ================================== */
+.projects-container {
+  padding: 5em 1em;
+}
+
+  .projects-container h2 {
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 0.85em;
+  }
+
+  .project-tools {
+    font-size: 0.75em;
+    flex-wrap: wrap;
+  }
+
+  .project-img {
+    max-width: 75%;
+  }
+
+  /* ===============================
+    styles for Contact.js
+  ================================== */
+  .info-resume-container {
+    flex-direction: column-reverse;
+  }
+
+  .info-resume-container h3 {
+    padding-bottom: 1em;
+    text-align: center;
+  }
+}
