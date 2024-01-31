@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.9af63566.css",
+    "main.js": "/my-website/static/js/main.d55e643a.js",
+    "static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.jpg": "/my-website/static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.4b22c8c247c825c8902c.jpg",
+    "static/media/Screen Shot 2024-01-20 at 10.41.05 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.41.05 AM.6b6270f273af6ddb11c2.png",
+    "static/media/Screen Shot 2024-01-20 at 10.09.53 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.09.53 AM.f1c1ff7e23cacee223f2.png",
+    "static/media/colin-billingsley_resume.pdf": "/my-website/static/media/colin-billingsley_resume.b287a2a12774a82dc797.pdf",
+    "static/media/IMG_20210323_160446_338_Original.jpg": "/my-website/static/media/IMG_20210323_160446_338_Original.d76b926f20b6da6d379e.jpg",
+    "static/media/python.png": "/my-website/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/physics.png": "/my-website/static/media/physics.86c8d9eba03e29814d2a.png",
+    "static/media/letter-c.png": "/my-website/static/media/letter-c.ca323b325816f40cf155.png",
+    "static/media/java.png": "/my-website/static/media/java.ddf8676bd569fe01ab44.png",
+    "static/media/c-.png": "/my-website/static/media/c-.24a8f93854ab092f17a7.png",
+    "static/media/github.png": "/my-website/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/html.png": "/my-website/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/css-3.png": "/my-website/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/js.png": "/my-website/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/my-website/index.html",
+    "main.9af63566.css.map": "/my-website/static/css/main.9af63566.css.map",
+    "main.d55e643a.js.map": "/my-website/static/js/main.d55e643a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9af63566.css",
+    "static/js/main.d55e643a.js"
+  ]
+}
