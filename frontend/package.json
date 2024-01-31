@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://colinbillingsley.github.io/colinbillingsley.github.io",
+  "homepage": "https://colinbillingsley.github.io/my-website",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
