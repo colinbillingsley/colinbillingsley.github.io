@@ -93,6 +93,10 @@ styles for Nav.js
   width: 100%;
 }
 
+.name-link {
+  color: var(--nav-link-color);
+}
+
 .nav-link:visited,
 .name-link:visited {
   color: var(--nav-link-color);
