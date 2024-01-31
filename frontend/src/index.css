@@ -17,7 +17,7 @@ Photo by <a href="https://unsplash.com/@benjeeeman?utm_content=creditCopyText&ut
   --bg-color-gray: rgb(234, 234, 234);
   --nav-bg-color: rgba(57, 57, 57, 0.458);
   --nav-dark-bg: rgba(0, 0, 0, 0.368);
-  --link-hover-color: rgba(252, 252, 252, 0.613);
+  --link-hover-color: rgba(252, 252, 252, 0.79);
   --nav-link-color: rgb(255, 255, 255);
   --courses-card-hover-color: rgba(0, 0, 0, 0.239);
 }
@@ -248,11 +248,6 @@ styles for Education.js
   transition: all 0.3s ease;
 }
 
-.lssc-list:hover {
-  outline: 2px solid green;
-  outline-offset: 5px;
-}
-
 .ucf-list {
   flex-basis: 400px;
   flex-grow: 1;
@@ -270,9 +265,9 @@ styles for Education.js
   color: gold;
 }
 
-.ucf-list:hover {
-  outline: 2px solid gold;
-  outline-offset: 5px;
+.ucf-list:hover,
+.lssc-list:hover {
+  box-shadow: 0 5px 8px var(--courses-card-hover-color);
 }
 
 .lssc-sublist li,
@@ -289,8 +284,7 @@ styles for Education.js
 }
 
 .relevant-courses-list:hover {
-  outline: 2px solid white;
-  outline-offset: 5px;
+  box-shadow: 0 5px 8px var(--courses-card-hover-color);
 }
 
 .relevant-courses-sublist {

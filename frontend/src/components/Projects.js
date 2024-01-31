@@ -24,6 +24,7 @@ const Projects = () => {
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>PHP</li>
+                            <li>MySQL</li>
                         </ul>
                         <a className='github-link' href="https://github.com/colinbillingsley/LAMP-Project-SLP01" target='_blank' rel='noreferrer'>
                         <i><FontAwesomeIcon icon={faGithub} size='xl' style={{ color: "black",}} /></i>
@@ -44,6 +45,7 @@ const Projects = () => {
                             <li>CSS</li>
                             <li>Express</li>
                             <li>Node.js</li>
+                            <li>MongoDB</li>
                         </ul>
                         <a className='github-link' href="https://github.com/colinbillingsley/POOSD-MERN-Project" target='_blank' rel='noreferrer'>
                             <i><FontAwesomeIcon icon={faGithub} size='xl' style={{color: "black",}} /></i>
