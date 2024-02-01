@@ -211,9 +211,24 @@ styles for Education.js
 }
 
 .education-school {
+  display: block;
   font-weight: bold;
-  line-height: 2;
   font-size: 1.25em;
+}
+
+.uni-address {
+  color: gray;
+}
+
+.uni-dates {
+  font-style: italic;
+  color: gray;
+  padding-bottom: 1em;
+}
+
+.uni-gpa span,
+.uni-awards span {
+  font-weight: 600;
 }
 
 .education-courses {
@@ -229,7 +244,7 @@ styles for Education.js
   background-color: white;
   padding: 1em;
   transition: all 0.3s ease;
-  border-radius: 15px;
+  border-radius: 10px;
   color: black;
 }
 
@@ -243,17 +258,19 @@ styles for Education.js
 .lssc-list {
   flex-basis: 400px;
   flex-grow: 1;
-  outline: 2px solid transparent;
-  outline-offset: 5px;
+  text-align: left;
+  border-left: 3px solid green;
+  border-radius: 0 8px 8px 0;
   transition: all 0.3s ease;
 }
 
 .ucf-list {
   flex-basis: 400px;
   flex-grow: 1;
+  text-align: left;
+  border-radius: 0 8px 8px 0;
+  border-left: 3px solid gold;
   color: black;
-  outline: 2px solid transparent;
-  outline-offset: 5px;
   transition: all 0.3s ease;
 }
 
@@ -276,7 +293,7 @@ styles for Education.js
 }
 
 .relevant-courses-list {
-  flex-basis: 800px;
+  flex-basis: 1000px;
   flex-grow: 3;
   outline: 2px solid transparent;
   outline-offset: 5px;

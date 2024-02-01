@@ -5,19 +5,25 @@ const Education = () => {
             <p className="education-subtext">Here are the colleges I've attended and relevant courses taken that apply to the field.</p>
             <ul className="education-lists-container">
                 <li className="lssc-list">
-                    <span className="education-school">Lake-Sumter State College (LSSC):</span>
+                    <span className="education-school">Lake-Sumter State College (LSSC)</span>
                     <ul className="lssc-sublist">
-                        <li>I started my college education at LSSC in spring of 2020. I graduated at LSSC in the summer of 2021, where I earned my AA in CS.</li>
+                        <li className="uni-address">9501 US-441, Leesburg, FL 34788</li>
+                        <li className="uni-dates">January 2020 - July 2021</li>
+                        <li className="uni-gpa"><span>GPA:</span> 3.88</li>
+                        <li className="uni-awards"><span>Awards:</span> Dean's List, President's List</li>
                     </ul>
                 </li>
                 <li className="ucf-list">
                     <span className="education-school">University of Central Florida (UCF):</span>
                     <ul className="ucf-sublist">
-                        <li>I began my education at UCF in the fall of 2021. I plan on graduating with my BS in CS at the end of this year, December 2024.</li>
+                        <li className="uni-address">4000 Central Florida Blvd, Orlando, FL 32816</li>
+                        <li className="uni-dates">August 2021 - Present</li>
+                        <li className="uni-gpa"><span>GPA:</span> 3.88</li>
+                        <li className="uni-awards"><span>Awards:</span> Dean's List, President's List</li>
                     </ul>
                 </li>
                 <li className="relevant-courses-list">
-                    <span className="education-courses">Relevant Course Work:</span>
+                    <span className="education-courses">Relevant Course Work</span>
                     <ul className="relevant-courses-sublist">
                         <li>Concepts of Computer Science
                             <p>Python</p>
