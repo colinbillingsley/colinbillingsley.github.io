@@ -15,8 +15,8 @@ Photo by <a href="https://unsplash.com/@benjeeeman?utm_content=creditCopyText&ut
 :root {
   --bg-color-white: white;
   --bg-color-gray: rgb(234, 234, 234);
-  --nav-bg-color: rgba(57, 57, 57, 0.458);
-  --nav-dark-bg: rgba(0, 0, 0, 0.368);
+  --sidebar-bg-color: rgba(71, 88, 99, 0.611);
+  --nav-dark-bg: rgb(71, 88, 99);
   --link-hover-color: rgba(252, 252, 252, 0.79);
   --nav-link-color: rgb(255, 255, 255);
   --courses-card-hover-color: rgba(0, 0, 0, 0.239);
@@ -513,7 +513,7 @@ styles for Contact.js
 .resume-button:hover {
   transform: scale(1.05);
   border: 1px solid transparent;
-  background-color: rgb(128, 192, 213);
+  background-color: var(--nav-dark-bg);
   color: white;
 }
 
@@ -624,7 +624,7 @@ styles for Footer.js
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.142);
+    background-color: var(--sidebar-bg-color);
     backdrop-filter: blur(10px);
     display: flex;;
     flex-direction: column;
@@ -647,7 +647,7 @@ styles for Footer.js
     width: 100%;
     padding: 1.5rem 1rem;
     display: block;
-    color: black;
+    color: white;
   }
 
   .sidebar-link:hover {
