@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.6249ac2b.css",
-    "main.js": "/my-website/static/js/main.9dd30339.js",
+    "main.css": "/my-website/static/css/main.015fedaa.css",
+    "main.js": "/my-website/static/js/main.9478f66a.js",
     "static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.jpg": "/my-website/static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.4b22c8c247c825c8902c.jpg",
     "static/media/Screen Shot 2024-01-20 at 10.41.05 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.41.05 AM.6b6270f273af6ddb11c2.png",
     "static/media/Screen Shot 2024-01-20 at 10.09.53 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.09.53 AM.f1c1ff7e23cacee223f2.png",
@@ -17,11 +17,11 @@
     "static/media/css-3.png": "/my-website/static/media/css-3.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/my-website/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/my-website/index.html",
-    "main.6249ac2b.css.map": "/my-website/static/css/main.6249ac2b.css.map",
-    "main.9dd30339.js.map": "/my-website/static/js/main.9dd30339.js.map"
+    "main.015fedaa.css.map": "/my-website/static/css/main.015fedaa.css.map",
+    "main.9478f66a.js.map": "/my-website/static/js/main.9478f66a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6249ac2b.css",
-    "static/js/main.9dd30339.js"
+    "static/css/main.015fedaa.css",
+    "static/js/main.9478f66a.js"
   ]
 }
