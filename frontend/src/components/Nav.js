@@ -9,7 +9,7 @@ const Nav = () => {
     };
 
     const changeColor = () => {
-        if (window.scrollY >= 400) {
+        if (window.scrollY >= 50) {
             setNavColor(true);
         } else {
             setNavColor(false);

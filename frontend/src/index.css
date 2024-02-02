@@ -54,11 +54,14 @@ a:hover {
 styles for Nav.js
 ================================== */
 .nav-container {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 1.25em;
   transition: all 0.3s;
+  z-index: 9999;
 }
 
 .nav-dark-bg {
@@ -204,9 +207,9 @@ styles for Education.js
 
 .education-lists-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 2em;
 }
 
@@ -227,19 +230,24 @@ styles for Education.js
 }
 
 .uni-gpa span,
-.uni-awards span {
+.uni-awards span,
+.relevant-courses-title,
+.uni-degree span {
   font-weight: 600;
 }
 
-.education-courses {
-  font-weight: bold;
-  font-size: 1.25em;
-  line-height: 3;
+.uni-degree span:nth-child(2) {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.relevant-courses-title {
+  display: block;
+  padding-bottom: 5px;
 }
 
 .lssc-list,
-.ucf-list,
-.relevant-courses-list {
+.ucf-list {
   text-align: center;
   background-color: white;
   padding: 1em;
@@ -249,15 +257,13 @@ styles for Education.js
 }
 
 .lssc-list:hover,
-.ucf-list:hover,
-.relevant-courses-list:hover {
+.ucf-list:hover {
   transform: translateY(-8px);
   cursor: default;
 }
 
 .lssc-list {
-  flex-basis: 400px;
-  flex-grow: 1;
+  width: 100%;
   text-align: left;
   border-left: 3px solid green;
   border-radius: 0 8px 8px 0;
@@ -265,8 +271,6 @@ styles for Education.js
 }
 
 .ucf-list {
-  flex-basis: 400px;
-  flex-grow: 1;
   text-align: left;
   border-radius: 0 8px 8px 0;
   border-left: 3px solid gold;
@@ -282,6 +286,29 @@ styles for Education.js
   color: gold;
 }
 
+.ucf-relevant-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.ucf-relevant-courses li {
+  border-radius: 8px;
+  padding: 0.5em 2em;
+  box-shadow: 0 5px 8px rgba(128, 128, 128, 0.214);
+  transition: all 0.3s ease;
+}
+
+.ucf-relevant-courses li:hover {
+  transform: scale(1.05);
+}
+
+.ucf-relevant-courses li p {
+  font-size: 0.9em;
+  font-style: italic;
+  color: gray;
+}
+
 .ucf-list:hover,
 .lssc-list:hover {
   box-shadow: 0 5px 8px var(--courses-card-hover-color);
@@ -290,48 +317,6 @@ styles for Education.js
 .lssc-sublist li,
 .ucf-sublist li {
   line-height: 1.5;
-}
-
-.relevant-courses-list {
-  flex-basis: 1000px;
-  flex-grow: 3;
-  outline: 2px solid transparent;
-  outline-offset: 5px;
-  transition: all 0.3s ease;
-}
-
-.relevant-courses-list:hover {
-  box-shadow: 0 5px 8px var(--courses-card-hover-color);
-}
-
-.relevant-courses-sublist {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  column-gap: 50px;
-  row-gap: 15px;
-  color: black;
-}
-
-.relevant-courses-sublist li {
-  padding: 1em;
-  background-color: white;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.relevant-courses-sublist li:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 8px var(--courses-card-hover-color);
-}
-
-.relevant-courses-sublist li p {
-  text-align: center;
-  font-style: italic;
-  font-size: 0.85em;
-  color: gray;
 }
 
 /* ===============================

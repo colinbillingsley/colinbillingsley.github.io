@@ -11,6 +11,7 @@ const Education = () => {
                         <li className="uni-dates">January 2020 - July 2021</li>
                         <li className="uni-gpa"><span>GPA:</span> 3.88</li>
                         <li className="uni-awards"><span>Awards:</span> Dean's List, President's List</li>
+                        <li className="uni-degree"><span>Degree earned:</span> AA</li>
                     </ul>
                 </li>
                 <li className="ucf-list">
@@ -20,11 +21,11 @@ const Education = () => {
                         <li className="uni-dates">August 2021 - Present</li>
                         <li className="uni-gpa"><span>GPA:</span> 3.88</li>
                         <li className="uni-awards"><span>Awards:</span> Dean's List, President's List</li>
+                        <li className="uni-degree"><span>Degree earned:</span> BS in Computer Science <span>(In Progress)</span></li>
                     </ul>
-                </li>
-                <li className="relevant-courses-list">
-                    <span className="education-courses">Relevant Course Work</span>
-                    <ul className="relevant-courses-sublist">
+
+                    <span className="relevant-courses-title">Relevant Course Work:</span>
+                    <ul className="ucf-relevant-courses">
                         <li>Concepts of Computer Science
                             <p>Python</p>
                         </li>
