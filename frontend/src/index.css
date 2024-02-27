@@ -50,6 +50,10 @@ a:hover {
   background-attachment: fixed;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 /* ===============================
 styles for Nav.js
 ================================== */
@@ -113,6 +117,22 @@ styles for Nav.js
   display: none;
 }
 
+.nav-link-item:nth-child(1) {
+  animation: fadeInTop 1s 1 alternate;
+}
+.nav-link-item:nth-child(2) {
+  animation: fadeInTop 1.5s 1 alternate;
+}
+.nav-link-item:nth-child(3) {
+  animation: fadeInTop 2s 1 alternate;
+}
+.nav-link-item:nth-child(4) {
+  animation: fadeInTop 2.5s 1 alternate;
+}
+.nav-link-item:nth-child(5) {
+  animation: fadeInTop 3s 1 alternate;
+}
+
 /* ===============================
 styles for Hero.js
 ================================== */
@@ -131,12 +151,13 @@ styles for Hero.js
   max-width: 700px;
   color: white;
   padding-bottom: 12px;
-  
+  animation: fadeInTop 3s 1 alternate;
 }
 
 .hero-welcome-subtext {
   max-width: 700px;
   color: white;
+  animation: fadeInLeft 3s 1 alternate;
 }
 
 .colin-billingsley {
@@ -166,6 +187,7 @@ styles for About.js
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 5px 12px 12px rgba(0, 0, 0, 0.433);
+  
 }
 
 .about-header {
@@ -180,12 +202,6 @@ styles for About.js
   max-width: 500px;
 }
 
-.about-imgs {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
 /* ===============================
 styles for Education.js
 ================================== */
@@ -197,12 +213,12 @@ styles for Education.js
 .education-header {
   text-align: center;
   font-size: 2em;
-  line-height: 4;
+  margin-bottom: 1em;
 }
 
 .education-subtext {
   text-align: center;
-  padding-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 .education-lists-container {
@@ -526,6 +542,62 @@ styles for Footer.js
   padding: 5em;
   text-align: center;
 }
+
+/* ===============================
+Animation classes
+================================== */
+.fade-in-top {
+  animation: fadeInTop 3s 1 alternate;
+}
+
+.fade-in-right {
+  animation: fadeInRight 3s 1 alternate;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 3s 1 alternate;
+}
+
+
+@keyframes fadeInTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+
+
+
+
+
+
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

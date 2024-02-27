@@ -1,5 +1,6 @@
 import pokemon from '../imgs/Screen Shot 2024-01-20 at 10.09.53 AM.png'
 import tot from '../imgs/Screen Shot 2024-01-20 at 10.41.05 AM.png'
+import dogPics from '../imgs/Screen Shot 2024-02-27 at 11.40.00 AM.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -48,6 +49,25 @@ const Projects = () => {
                             <li>MongoDB</li>
                         </ul>
                         <a className='github-link' href="https://github.com/colinbillingsley/POOSD-MERN-Project" target='_blank' rel='noreferrer'>
+                            <i><FontAwesomeIcon icon={faGithub} size='xl' style={{color: "black",}} /></i>
+                        </a>
+                    </div>
+                </li>
+                <li className='project-card'>
+                    <img src={dogPics} alt="doggy pics app" width="400px" height="auto" className='project-img'/>
+                    <div className="project-info">
+                        <p className='project-title'>DoggyPics (frontend/API)</p>
+                        <p className="project-description">
+                            DoggyPics is a simple project that uses the Dog CEO Dog API to get all kinds of pictures from specific dog breeds.
+                            You can see all the breeds that the Dog CEO Dog API has, and you can click on each breed to see pictures of that breed,
+                            and if there are any sub-breeds, you can see specific pictures of them as well.
+                        </p>
+                        <ul className="project-tools">
+                            <li>React</li>
+                            <li>CSS</li>
+                            <li>Postman</li>
+                        </ul>
+                        <a className='github-link' href="https://github.com/colinbillingsley/dog-app" target='_blank' rel='noreferrer'>
                             <i><FontAwesomeIcon icon={faGithub} size='xl' style={{color: "black",}} /></i>
                         </a>
                     </div>

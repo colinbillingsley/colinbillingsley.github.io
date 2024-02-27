@@ -8,20 +8,21 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-    return (
-      <div className="app">
-        <div className="top-page">
-          <Nav />
-          <Hero />
-        </div>
-        <About />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
+
+  return (
+    <div className="app">
+      <div className="top-page">
+        <Nav />
+        <Hero />
       </div>
-    )
+      <About />
+      <Education />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  )
 }
 
 export default App;

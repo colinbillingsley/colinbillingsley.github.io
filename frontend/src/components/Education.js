@@ -26,34 +26,34 @@ const Education = () => {
 
                     <span className="relevant-courses-title">Relevant Course Work:</span>
                     <ul className="ucf-relevant-courses">
-                        <li>Concepts of Computer Science
+                        <li className="ucf-course">Concepts of Computer Science
                             <p>Python</p>
                         </li>
-                        <li>Introduction to C
+                        <li className="ucf-course">Introduction to C
                             <p>C</p>
                         </li>
-                        <li>Computer Science 1
+                        <li className="ucf-course">Computer Science 1
                             <p>C</p>
                         </li>
-                        <li>Computer Science 2
+                        <li className="ucf-course">Computer Science 2
                             <p>Java</p>
                         </li>
-                        <li>Object-Oriented Programming
+                        <li className="ucf-course">Object-Oriented Programming
                             <p>Java</p>
                         </li>
-                        <li>Processes of Object-Oriented Development (Jr. Senior Design)
+                        <li className="ucf-course">Processes of Object-Oriented Development (Jr. Senior Design)
                             <p>HTML, CSS, JavaScript, React, Express, Node.js, MongoDB, MySQL</p>
                         </li>
-                        <li>Systems Software
+                        <li className="ucf-course">Systems Software
                             <p>C</p>
                         </li>
-                        <li>Programming Languages
+                        <li className="ucf-course">Programming Languages
                             <p>Haskell, TypeScript/JavaScript, C++, C#</p>
                         </li>
-                        <li>Database Systems
+                        <li className="ucf-course">Database Systems
                             <p>React, CSS, Express, Node.js, MySQL</p>
                         </li>
-                        <li>Web-Based Information Technology
+                        <li className="ucf-course">Web-Based Information Technology
                             <p>HTML, CSS, Bootstrap, PHP, JQuery, React</p>
                         </li>
                     </ul>

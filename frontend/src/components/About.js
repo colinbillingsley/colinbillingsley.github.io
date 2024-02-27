@@ -1,6 +1,7 @@
 import me from '../imgs/IMG_20210323_160446_338_Original.jpg'
 
 const About = () => {
+    
     return (
         <section id="about" className="about-container">
             <div className="about-content">
