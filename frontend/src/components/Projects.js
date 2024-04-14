@@ -1,15 +1,45 @@
 import pokemon from '../imgs/Screen Shot 2024-01-20 at 10.09.53 AM.png'
 import tot from '../imgs/Screen Shot 2024-01-20 at 10.41.05 AM.png'
 import dogPics from '../imgs/Screen Shot 2024-02-27 at 11.40.00 AM.png'
+import univents from '../imgs/Screenshot 2024-04-14 at 5.32.56 PM.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = () => {
     return (
         <section id="projects" className="projects-container">
             <h2>Projects</h2>
             <ul className="projects-list">
+                <li className='project-card'>
+                    <img src={univents} alt="univents" width="400px" height="auto" className='project-img'/>
+                    <div className="project-info">
+                        <p className='project-title'>Univents (frontend/backend)</p>
+                        <p className="project-description">
+                            Univents is a web application that enables universities to host their events and RSO groups located on campus.
+                            There are 3 levels of users: A super admin that creates the initial account for the university and accept or 
+                            deny RSO groups and events, an admin that can create RSOs and events, and a basic user than can join RSOs and
+                            view events on campus. I worked the frontend and assisted in the backend.
+                        </p>
+                        <ul className="project-tools">
+                            <li>React</li>
+                            <li>Express</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>CSS</li>
+                            <li>Postman</li>
+                        </ul>
+                        <div className='project-card-btns'>
+                            <a className='github-link' href="https://github.com/colinbillingsley/database-systems-project" target='_blank' rel='noreferrer'>
+                                <i><FontAwesomeIcon icon={faGithub} size='xl' style={{ color: "black",}} /></i>
+                            </a>
+                            <a className='video-link' href="https://drive.google.com/file/d/1iCfHR5V6v1a-yRV1ihCVlG_nqjbJ2vSg/view?usp=sharing" target='_blank' rel='noreferrer'>
+                                <i><FontAwesomeIcon icon={faCirclePlay} size='xl' style={{ color: "black",}}/></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
                 <li className='project-card'>
                     <img src={pokemon} alt="pokemon manager" width="400px" height="auto" className='project-img'/>
                     <div className="project-info">

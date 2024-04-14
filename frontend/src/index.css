@@ -442,7 +442,15 @@ styles for Projects.js
   border: 3px solid white;
 }
 
-.github-link i {
+.project-card-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.github-link i,
+.video-link i {
   display: inline-block;
   border-radius: 50%;
   outline: 1px solid transparent;
@@ -450,7 +458,8 @@ styles for Projects.js
   transition: all 0.3s ease;
 }
 
-.github-link:hover i {
+.github-link:hover i,
+.video-link:hover i {
   outline: 1px solid black;
   transform: scale(1.2);
 }
