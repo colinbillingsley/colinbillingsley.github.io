@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.54b9f3dc.css",
-    "main.js": "/my-website/static/js/main.7c234b79.js",
+    "main.css": "/my-website/static/css/main.38eed463.css",
+    "main.js": "/my-website/static/js/main.f8821fcb.js",
     "static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.jpg": "/my-website/static/media/ben-den-engelsen-VIXMeng4e4c-unsplash.4b22c8c247c825c8902c.jpg",
     "static/media/Screen Shot 2024-01-20 at 10.41.05 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.41.05 AM.6b6270f273af6ddb11c2.png",
     "static/media/Screen Shot 2024-01-20 at 10.09.53 AM.png": "/my-website/static/media/Screen Shot 2024-01-20 at 10.09.53 AM.f1c1ff7e23cacee223f2.png",
+    "static/media/Screenshot 2024-04-14 at 5.32.56 PM.png": "/my-website/static/media/Screenshot 2024-04-14 at 5.32.56 PM.cacfeb5c784e69ee3583.png",
     "static/media/Screen Shot 2024-02-27 at 11.40.00 AM.png": "/my-website/static/media/Screen Shot 2024-02-27 at 11.40.00 AM.b3ee683ee270d75351a0.png",
     "static/media/colin-billingsley_resume.pdf": "/my-website/static/media/colin-billingsley_resume.b287a2a12774a82dc797.pdf",
     "static/media/IMG_20210323_160446_338_Original.jpg": "/my-website/static/media/IMG_20210323_160446_338_Original.d76b926f20b6da6d379e.jpg",
@@ -18,11 +19,11 @@
     "static/media/css-3.png": "/my-website/static/media/css-3.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/my-website/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/my-website/index.html",
-    "main.54b9f3dc.css.map": "/my-website/static/css/main.54b9f3dc.css.map",
-    "main.7c234b79.js.map": "/my-website/static/js/main.7c234b79.js.map"
+    "main.38eed463.css.map": "/my-website/static/css/main.38eed463.css.map",
+    "main.f8821fcb.js.map": "/my-website/static/js/main.f8821fcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.54b9f3dc.css",
-    "static/js/main.7c234b79.js"
+    "static/css/main.38eed463.css",
+    "static/js/main.f8821fcb.js"
   ]
 }
